@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 20vh 80vh;
+}
+
+.header {
+    background-color: orange;
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: .5rem;
+}
+
+.sidebar {
+    background-color: yellow;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr 7fr;
+    padding: .5rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.content .title {
+    margin-bottom: 1rem;
+}
+
+.project {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    overflow: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    gap: 1rem;
+}
+
+.cards > .card {
+    border: 2px red solid;
+    padding: 1rem;
+}
+
+.card > .icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.announcement {
+    background-color: blue;
+    grid-column: 2;
+    grid-row: 1;
+    overflow: auto;
+}
+
+.trending {
+    background-color: green;
+    overflow: auto;
+}
