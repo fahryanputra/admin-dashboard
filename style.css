@@ -21,6 +21,8 @@
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
     padding: 0rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
 }
 
 .search-bar {
@@ -29,9 +31,14 @@
     gap: 1rem;
 }
 
+.search-bar > label {
+    display: flex;
+}
+
 .search-bar > label > img {
     width: 1.5rem;
     height: 1.5rem;
+    align-items: center;
 }
 
 .search-bar > input {
