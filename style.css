@@ -20,14 +20,85 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
-    padding: .5rem;
+    padding: 0rem 2rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bar > img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.search-bar > input {
+    background-color: #e5e5e5;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    width: 80%;
+    height: 1.5rem;
+}
+
+.profile {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile > .notif-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.profile > .account-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+}
+
+.welcome > img {
+    width: 3.5rem;
+    height: 3.5rem;
+    grid-row: span 2;
+}
+
+.publish {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.publish > button {
+    outline: none;
+    border: none;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 1rem;
+    background-color: #3b82f6;
+    color: #fafafa;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.publish > button:active {
+    background-color: #bfdbfe;
 }
 
 .sidebar {
     background-color: #3b82f6;
     grid-column: 1;
     grid-row: 1 / span 2;
-    padding: .5rem;
+    padding: 1rem .5rem;
     font-weight: 600;
 }
 
